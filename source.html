@@ -11,50 +11,89 @@
         
         <p id="description">Tell us about your puppr!</p>
         
-        <label id="name-label" for="name">* Name: <input type="text" name="name" id="name" placeholder="Enter your name" required></label>
-        <br>
+        <div>
+            <div id="left">
+                <label id="name-label" for="name">* Name: </label>
+            </div>
+            <div id="right">
+                <input class="input-field" type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+        </div>
         
-        <label id="email-label" for="email">* Email: <input type="email" name="email" id="email" placeholder="Enter your email" required></label>
-        <br>
+        <div>
+            <div id="left">
+                <label id="email-label" for="email">* Email: </label>
+            </div>
+            <div id="right">
+                <input class="input-field" type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+        </div>
         
-        <label id="number-label" for="age">* Age of dog: <input type="number" name = age id="number" min="1" max="20" placeholder="Age"></label>
-        <br>
+        <div>
+            <div id="left">
+                <label id="number-label" for="age">* Age of dog: </label>
+            </div>
+            <div id="right">
+                <input class="input-field" type="number" name = age id="number" min="1" max="20" placeholder="Age">
+            </div>
+        </div>
+
+        <div>
+            <div id="left">
+                <label for="hobby">Which is your dog's<br>favorite hobby?</label>
+            </div>
+            <div id="right">
+                <select id="dropdown" name="hobby">
+                <option disabled value>Select an option</option>
+                <option value="walks">Walks</option>
+                <option value="naps">Naps</option>
+                <option value="park">Dog Park</option>
+                <option value="toys">Toys</option>
+                <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
         
-        <label for="hobby">Which is your dog's favorite hobby?</label>
-        <select id="dropdown" name="hobby">
-        <option disabled value>Select an option</option>
-        <option value="walks">Walks</option>
-        <option value="naps">Naps</option>
-        <option value="park">Dog Park</option>
-        <option value="toys">Toys</option>
-        <option value="other">Other</option>
-        </select>
-        <br>
+        <div>
+            <div id="left">
+                <label for="size">How big is your dog?</label>
+            </div>
+            <div id="right">
+                <ul style="list-style: none;">
+                    <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="size">Large</label></li>
+                    <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="size">Medium</label></li>
+                    <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="size">Small</label></li>
+                </ul>
+            </div>
+        </div>
         
-        <ul style="list-style: none;">
-            <label for="size">How big is your dog?</label>
-            <li class="radio"><label>Large<input name="radio-buttons" value="1" type="radio" class="size"></label></li>
-            <li class="radio"><label>Medium<input name="radio-buttons" value="2" type="radio" class="size"></label></li>
-            <li class="radio"><label>Small<input name="radio-buttons" value="3" type="radio" class="size"></label></li>
-        </ul>
-        <br>
+        <div>
+            <div id="left">
+                <label for="tricks">Tricks your dog knows<br>(Check all that apply):</label>
+            </div>
+            <div id="right">
+                <ul id="tricks" style="list-style: none;">
+                <li class="checkbox"><input name="trick" value="1" type="checkbox">Sit</li>
+                <li class="checkbox"><input name="trick" value="2" type="checkbox">Down</li>
+                <li class="checkbox"><input name="trick" value="3" type="checkbox">Stay</li>
+                <li class="checkbox"><input name="trick" value="4" type="checkbox">Come</li>
+                <li class="checkbox"><input name="trick" value="5" type="checkbox">Roll-over</li>
+                <li class="checkbox"><input name="trick" value="6" type="checkbox">Shake</li>
+                </ul>
+            </div>   
+        </div>
         
-        <label for="tricks">Tricks your dog knows<br>(Check all that apply):</label>
-        <ul id="tricks" style="list-style: none;">
-            <li class="checkbox"><input name="trick" value="1" type="checkbox">Sit</li>
-            <li class="checkbox"><input name="trick" value="2" type="checkbox">Down</li>
-            <li class="checkbox"><input name="trick" value="3" type="checkbox">Stay</li>
-            <li class="checkbox"><input name="trick" value="4" type="checkbox">Come</li>
-            <li class="checkbox"><input name="trick" value="5" type="checkbox">Roll-over</li>
-            <li class="checkbox"><input name="trick" value="6" type="checkbox">Shake</li>
-        </ul>
-        <br>
         
-        <label for="stories">Any fun puppo stories?</label>
-        <textarea id="stories" name="story" placeholder="Write your story here..."></textarea>
-        <br>
+        <div>
+            <div id="left">
+                <label for="stories">Any fun puppo storie? </label>
+            </div>
+            <div id="right">
+                <textarea id="stories" name="story" placeholder="Write your story here..."></textarea>
+            </div>
+        </div>
         
-        <button id="submit" type="submit">Submit</button>
+        <div id="center"><button id="submit" type="submit">Submit</button></div>
         
     </form>    
 </div>

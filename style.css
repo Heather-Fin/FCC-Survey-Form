@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
 body{
-  background-image:url("paw-prints.jpg");
+    background-color: #DDD8C4;
     background-repeat: repeat-y;
     background-size: 100%;
 }
@@ -8,6 +10,8 @@ body{
     text-align: center;
     margin-bottom: 5px;
     color: #0F5257;
+font-family: 'Dosis', sans-serif;
+    font-size: 50px;
 }
 
 #form-bg{
@@ -19,17 +23,75 @@ body{
   padding: 10px;
   padding-top: 20px;
 }
+
 #survey-form{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #0F5257;
+    font-family: 'Dosis', sans-serif;
 }
 
 #description{
     text-align: center;
     margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 18;
     color: #0F5257;
 }
 
-#submit{
+#left{
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-right: 10px;
     
+}
+
+#right{
+  display: inline-block;
+  text-align: left;
+  width: 40%;
+  vertical-align: middle;
+}
+
+.input-field, #dropdown{
+  height: 30px;
+  width: 200px;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #c0c0c0;
+  border-radius: 10px;
+}
+
+.radio, .checkbox{
+    height: 30px;
+    width: 150px;
+    margin: 5px;
+    margin-top: -5px;
+}
+
+textarea{
+    width: 200px;
+    height: 50px;
+}
+
+#center{
+    text-align: center;
+}
+
+#submit{
+    background-color: #0F5257;
+    border-radius: 20px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin-top: 20px;
+    border: 0px solid;
+}
+
+#submit:hover{
+    background-color: #1B97A0;
 }
